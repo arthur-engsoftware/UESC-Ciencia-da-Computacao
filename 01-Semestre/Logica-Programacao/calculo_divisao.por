@@ -2,20 +2,28 @@
  * Escreva um programa que receba dois números inteiros (X e Y) 
  * e exiba o quociente e o resto da divisão entre eles.
  */
+/* * ENUNCIADO:
+ * Escreva um programa que receba dois números inteiros (X e Y)
+ * e exiba o quociente e o resto da divisão entre eles.
+ */
 programa {
     funcao inicio() {
-        inteiro X, Y, resto, div
-        
-        escreva("Digite X: ")
-        leia(X)
-        escreva("Digite Y: ")
-        leia(Y)
+        inteiro x, y, resto, quociente
 
-        div = X / Y 
-        resto = X % Y
-        
-        escreva("O quociente da divisão é: ", div, "\n")
-        escreva("O resto é: ", resto)
+        escreva("Digite X: ")
+        leia(x)
+        escreva("Digite Y: ")
+        leia(y)
+
+        se (y == 0) {
+            escreva("Erro: o divisor nao pode ser zero")
+        } senao {
+            quociente = x / y
+            resto = x % y
+
+            escreva("O quociente da divisao e: ", quociente, "\n")
+            escreva("O resto e: ", resto)
+        }
     }
 }
 /* $$$ Portugol Studio $$$ 
