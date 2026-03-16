@@ -1,56 +1,41 @@
 programa
 {
-	
-	funcao inicio()
-	{
-		escreva("------------------------\n")
-		escreva ("Calculadora Simples\n")
-		escreva("------------------------\n")
+    funcao inicio()
+    {
+        escreva("------------------------\n")
+        escreva("Calculadora Simples\n")
+        escreva("------------------------\n")
 
-		// Cabeçalho do programa
+        real a, b, resultado
+        cadeia op
 
- 		real a,b,soma,subtracao,multiplicacao,divisao
- 		cadeia op
+        escreva("Informe o primeiro numero da conta: ")
+        leia(a)
+        escreva("Informe o segundo numero da conta: ")
+        leia(b)
+        escreva("Informe a operacao (+, -, *, /): ")
+        leia(op)
 
- 		// Declaração das variáveis utilizadas nos cálculos
-
- 		escreva ("Informe o primeiro numero da conta: ")
- 		leia (a)
-
- 		escreva ("Informe o segundo numero da conta: ")
- 		leia (b)
-
- 		escreva ("Informe a operação (+, -, *, /): ") 
- 		leia (op)
-
- 		// Entrada de dados do usuário
-
- 		se (op == "+") {
- 			soma = a + b
- 			escreva ("O resultado da operação é: ", soma )
- 		}
-
- 		se (op == "-"){
- 			subtracao = a - b
- 			escreva ("O resultado da operação é: ", subtracao )
- 		}
-
- 		se (op == "*"){
- 			multiplicacao = a * b
- 			escreva ("O resultado da operação é: ", multiplicacao)
- 		}
-
- 		se (op == "/"){
- 			divisao = a / b
- 			escreva ("O resultado da operação é: ", divisao )
-
- 			// Verificação de divisão por zero
- 			se (b == 0 e op == "/")
- 			{
- 				escreva ("Não é possível fazer divisão por zero")
- 			}
- 		}
-	}
+        se (op == "+") {
+            resultado = a + b
+            escreva("O resultado e: ", resultado)
+        } senao se (op == "-") {
+            resultado = a - b
+            escreva("O resultado e: ", resultado)
+        } senao se (op == "*") {
+            resultado = a * b
+            escreva("O resultado e: ", resultado)
+        } senao se (op == "/") {
+            se (b == 0) {
+                escreva("Nao e possivel dividir por zero")
+            } senao {
+                resultado = a / b
+                escreva("O resultado e: ", resultado)
+            }
+        } senao {
+            escreva("Operacao invalida")
+        }
+    }
 }
 /* $$$ Portugol Studio $$$ 
  * 
