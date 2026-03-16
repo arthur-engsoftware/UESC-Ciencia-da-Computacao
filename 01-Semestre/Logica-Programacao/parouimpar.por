@@ -3,28 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		//Cabeçalho do programa
-		
-		escreva ("--------------------------\n")
-		escreva ("ALGORITMO DE IMPAR OU PAR\n ")
-		escreva ("--------------------------\n")
-		
-		//Declaração das variáveis utilizadas nos cálculos
-     		inteiro numero
-     		
-  		// Entrada de dados do usuário e o programa
-		escreva ("Informe o numero que você usuário quer saber: ")
-		leia (numero)
-	
-		
-		se (numero%2 == 0) {
-			escreva ("O numero é par ")}
-			senao {
-				escreva ("O numero é impar")
-				
-			}			
-		}    
-	}  
+		programa {
+    funcao inicio() {
+        escreva("--------------------------\n")
+        escreva("ALGORITMO DE PAR OU IMPAR\n")
+        escreva("--------------------------\n")
+
+        inteiro numero
+
+        escreva("Digite um numero: ")
+        leia(numero)
+
+        se (numero % 2 == 0) {
+            escreva("O numero e par")
+        } senao {
+            escreva("O numero e impar")
+        }
+    }
+}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
