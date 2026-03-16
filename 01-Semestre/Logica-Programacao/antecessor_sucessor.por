@@ -3,18 +3,27 @@
  * Entrada: Inteiro positivo N.
  * Saída: Duas linhas contendo o ANTECESSOR e o SUCESSOR.
  */
+/* * ENUNCIADO:
+ * Dado um número inteiro N, determine e exiba seu antecessor e seu sucessor.
+ * Entrada: Inteiro positivo N.
+ * Saída: Duas linhas contendo o ANTECESSOR e o SUCESSOR.
+ */
 programa {
     funcao inicio() {
-        inteiro n, sus, ant
-        
+        inteiro n, sucessor, antecessor
+
         escreva("Digite um numero inteiro positivo: ")
         leia(n)
-        
-        sus = n + 1
-        ant = n - 1
-        
-        escreva("ANTECESSOR: ", ant, "\n")
-        escreva("SUCESSOR: ", sus)
+
+        se (n <= 0) {
+            escreva("Atencao: o enunciado pede um inteiro positivo!\n")
+        }
+
+        antecessor = n - 1
+        sucessor = n + 1
+
+        escreva("ANTECESSOR: ", antecessor, "\n")
+        escreva("SUCESSOR: ", sucessor)
     }
 }
 
